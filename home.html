@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>GEN CHEM PETA</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                overflow-x: hidden;
+            }
+
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: -250px;
+                width: 250px;
+                height: 100%;
+                background: #A7DCA5;
+                padding: 20px;
+                transition: left 0.3s;
+                z-index: 1000;
+            }
+
+            .sidebar.open {
+                left: 0;
+            }
+
+            .sidebar ul {
+                list-style: none;
+                margin-top: 150px;
+                text-align: left;
+                padding: 0;
+            }
+
+            .sidebar li {
+                margin: 20px;
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+                margin-bottom: 35px;
+                font-family: "Lora", serif;
+                font-size: 18px;
+            }
+
+            .sidebar img {
+                width: 35px;
+                margin-right: 10px;
+            }
+
+            .toggle-btn {
+                position: fixed;
+                top: 45px;
+                left: 10px;
+                font-size: 30px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                z-index: 1100;
+                margin-left: 10px;
+                color: #023020;
+            }
+
+            body {
+                background-color: #E4FDE1;
+            }
+
+            .header {
+                height: 170px;
+                width: 100%;
+                background-image: url('bgg.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-family: "Lora", serif;
+                font-size: 40px;
+                margin-right: 10px;
+                color: #023020;
+            }
+
+            .content {
+                padding: 0px;
+                max-width: 800px;
+                margin: 40px auto;
+                text-align: justify;
+                font-family: "Times New Roman", Times, Serif;
+                font-size: 20px;
+                line-height: 2.5;
+            }
+
+            .content h2 {
+                text-align: left;
+                margin-bottom: 10px;
+                color: #4f6852;
+            }
+
+            .content p {
+                margin-bottom: 50px;
+                margin-top: -10px;
+            }
+
+            .content h1 {
+                text-align: center;
+                margin-right: 30px;
+                color: #336436;
+            }
+
+            .content hr {
+                margin-bottom: 40px;
+                margin-top: 80px;
+                color: black;
+            }
+
+            .content img {
+                border-style: solid;
+                border-width: 2px;
+                border-color: #4f6852;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><img src="https://img.icons8.com/ios-filled/50/home.png"/><a href="home.html" style="color: #023020;">Home</a></li>
+                <li><img src="https://img.icons8.com/ios-filled/50/time-machine.png"/><a href="history.html" style="color: #023020;">History</a></li>
+                <li><img src="https://img.icons8.com/ios-filled/50/user.png"/><a href="about_the_authors.html" style="color: #023020;">About the Authors</a></li>
+                <li><img src="https://img.icons8.com/ios-filled/50/link.png"/><a href="sources.html" style="color: #023020;">Sources</a></li>
+            </ul>
+        </div>
+
+        <!-- Toggle Button -->
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+        <!-- Page Content -->
+        <div id="mainContent">
+            <div class="header" id="header">
+                <h1>The Curian Archives</h1>
+            </div>
+
+            <div class="content" id="content">
+                <h1>All About Chemistry</h1>
+
+                <p>According to Michal Meyer from The UNESCO Courier, chemistry began the moment our ancestors became human; and frankly, it’s a sentiment that is as true as it is universal. To many students, any topic when combined with the word “chemistry” becomes an extremely daunting task to accomplish. Whether it be from fear of making mistakes, from hesitation to venture into the unknown, or from the stress of the subject matter altogether, chemistry is seen by most as being difficult.</p>
+
+                <div style="display: flex; align-items: flex-start; gap: 15px;">
+                    <div>
+                        <img src="chem.jpg" alt="Chemistry" style="width: 200px; height: 150px; display: block; margin-bottom: 25px;">
+                        <img src="che.jpg" alt="Chemistry" style="width: 200px; height: 150px;">
+                    </div>
+                    <p style="margin-top: -15px;">
+                        Some say it’s too technical, too precise to account for errors, and too in-depth to be handled lightly,
+                        but it’s crucial to remember that chemistry wouldn’t be what it is today without these same characteristics.
+                        While it is true that chemistry harbors challenges not often found within other subject areas like English,
+                        Philosophy, and even Mathematics as the subject leans toward trial and error rather than practical application,
+                        chemistry is not indomitable.
+                    </p>
+                </div>
+                <p>As a matter of fact, when you really look at it through a microscopic point of view, chemistry is also a subject in creating art but through different means that differ from the norm. But it is art nonetheless.</p>
+                <hr>
+
+                <h1>How Do You Define Chemistry? </h1>
+                <p>It is the scientific study of the properties and behavior of matter; more specifically, it deals with the changes that matter undergoes and the energy involved that accompanies these changes.</p>
+
+                <h2>The First Type: Pure Chemistry</h2>
+                <p>It is concerned with a greater understanding of the theories behind how matter is changing in chemical reactions. Unlike its counterpart in Applied Chemistry, this type is concerned with gathering knowledge for the sake of knowledge.</p>
+
+                <h2>The Second Type: Applied Chemistry</h2>
+                <p>A contrast to Pure Chemistry, this type focuses on the practical application of the countless scientific discoveries made in the field of chemistry to solve real-word problems. </p>
+                <hr>
+
+                <h1>Branches of an Oak Tree</h1>
+
+                <h2>Organic Chemistry</h2>
+                <p>This branch of chemistry is focused on  the study of carbon and its compounds. On the same note, it is also the study of the chemistry of life and reactions occurring in living organisms.</p>
+
+                <h2>Inorganic Chemistry</h2>
+                <p>A stark contrast to Organic Chemistry, it is the study of compounds not covered by organic chemistry. To be more specific, it studies inorganic compounds or compounds that don't contain a C-H (Carbon-Hydrogen) bond.</p>
+
+                <h2>Biochemistry</h2>
+                <p>This branch of chemistry studies the chemical processes that occur inside living organisms. To further one's familiarity with this branch, it's important to know that biochemistry is closely related to molecular biology, cell biology, and genetics.</p>
+
+                <h2>Physical Chemistry</h2>
+                <p>To combine physics with chemistry is to connect similarly theoretical-heavy fields to create an audacious product; Physical Chemistry  is the branch of chemistry that applies physics to the study of chemistry.</p>
+
+                <h2>Analytical Chemistry</h2>
+                <p>Known for its fairly critical nature, this branch is the study of the chemistry of matter and the development of tools to measure the properties of matter.</p>
+
+                <h2>Nuclear Chemistry</h2>
+                <p>The most volatile in terms of producing weaponry amongst the rest of chemistry's major branches, this is the study of the physical and chemical properties of elements which are influenced by changes in the structure of the atomic nucleus.</p>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                sidebar.classList.toggle('open');
+            }
+        </script>
+    </body>
+</html>
