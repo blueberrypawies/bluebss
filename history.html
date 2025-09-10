@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>GEN CHEM PETA</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                overflow-x: hidden;
+            }
+
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: -250px;
+                width: 250px;
+                height: 100%;
+                background: #A7DCA5;
+                padding: 20px;
+                transition: left 0.3s;
+                z-index: 1000;
+            }
+
+            .sidebar.open {
+                left: 0;
+            }
+
+            .sidebar ul {
+                list-style: none;
+                margin-top: 150px;
+                text-align: left;
+                padding: 0;
+            }
+
+            .sidebar li {
+                margin: 20px;
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+                margin-bottom: 35px;
+                font-family: "Lora", serif;
+                font-size: 18px;
+            }
+
+            .sidebar img {
+                width: 35px;
+                margin-right: 10px;
+            }
+
+            .toggle-btn {
+                position: fixed;
+                top: 45px;
+                left: 10px;
+                font-size: 30px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                z-index: 1100;
+                margin-left: 10px;
+                color: #023020;
+            }
+
+            body {
+                background-color: #E4FDE1;
+            }
+
+            .header {
+                height: 170px;
+                width: 100%;
+                background-image: url('bgg.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-family: "Lora", serif;
+                font-size: 40px;
+                margin-right: 10px;
+                color: #023020;
+            }
+
+            .content {
+                padding: 0px;
+                max-width: 800px;
+                margin: 40px auto;
+                text-align: justify;
+                font-family: "Times New Roman", Times, Serif;
+                font-size: 20px;
+                line-height: 2.5;
+            }
+
+            .content h2 {
+                text-align: left;
+                margin-bottom: 10px;
+                color: #4f6852;
+            }
+
+            .content p {
+                margin-bottom: 50px;
+                margin-top: -10px;
+            }
+
+            .content h1 {
+                text-align: center;
+                margin-right: 30px;
+                color: #336436;
+            }
+
+            .content hr {
+                margin-bottom: 40px;
+                margin-top: 80px;
+                color: black;
+            }
+
+            .content img {
+                width: 40%;
+                height: 60%;
+                float: center;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #4f6852;
+                margin-top: -10px;
+                margin-bottom: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><img src="https://img.icons8.com/ios-filled/50/home.png"/><a href="home.html" style="color: #023020;">Home</a></li>
+                <li><img src="https://img.icons8.com/ios-filled/50/time-machine.png"/><a href="history.html" style="color: #023020;">History</a></li>
+                <li><img src="https://img.icons8.com/ios-filled/50/user.png"/><a href="about_the_authors.html" style="color: #023020;">About the Authors</a></li>
+                <li><img src="https://img.icons8.com/ios-filled/50/link.png"/><a href="sources.html" style="color: #023020;">Sources</a></li>
+            </ul>
+        </div>
+
+        <!-- Toggle Button -->
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+        <!-- Page Content -->
+        <div id="mainContent">
+            <div class="header" id="header">
+                <h1>The Curian Archives</h1>
+            </div>
+
+            <div class="content" id="content">
+                <h1>A Historian’s Guide to A Chemist’s Heart</h1>
+
+                <h2>Back to the Ancient Mesopotamians and Babylonians</h2>
+                <p>This ancient civilization is credited with the discovery of fermentation; better known as the art of brewing wine by means of fermenting it to prolong its shelf life as well as to enhance its flavor and potency. It is crucial to know that the Mesopotamians were among the first to master fermentation as they've been able to produce beer as early as the 4th millennium BC. On a similar note, the field of metallurgy was also honed by the Mesopotamians. Metallurgy can be described as the developed techniques used to extract metals from ores, working with copper,  bronze, tin, silver, and gold.</p>
+
+                <p>Meanwhile, the Babylonians were credited with the advancement of organic chemistry through perfume-making; a staple in their noble houses and commonly associated with higher social statuses.</p>
+                <hr>
+
+                <h2>The Black Lands; Influence of Ancient Egyptians</h2>
+                <p>The papyrus, better known to be the first writing surface, was made in Ancient Egypt and was derived from the pith of the papyrus plant, Cyperus papyrus; a wetland sedge.</p>
+                <div style="display: flex; justify-content: left; gap: 50px; margin-top: 20px;">
+                    <img src="egypt.jpg" alt="Ancient Egypt" style="width: 350px; height: auto;" />
+                    <img src="eg.jpg" alt="Papyrus" style="width: 350px; height: auto;" />
+                </div>
+
+                <p>The Ancient Egyptians were also credited with the basis of cosmetics. The makeup during such a period in time were primarily created by mixing four lead-based chemicals; galena (which produced dark tones and gloss), cerussite (a white carbonate of lead), laurionite, and phosgenite. Apart from galena, all of these lead-based chemicals are white.</p>
+                <div style="display: flex; justify-content: left; gap: 50px; margin-top: 20px;">
+                    <img src="be.jpg" alt="Ancient Egypt" style="width: 350px; height: auto;" />
+                    <img src="beauty.jpg" alt="Papyrus" style="width: 350px; height: auto;" />
+                </div>
+
+                <p>Embalming, in Ancient Egypt, utilized a combination of chemicals including natron salt for the dehydration of tissues, various plant and animal fats, plant oils such as castor and juniper oils, and several types of resins with the likes of pine resin, mastic, and elemi. These resins were used to act as antiseptics, antifungals, and waterproof sealants.</p>
+                <div style="display: flex; justify-content: left; gap: 50px; margin-top: 20px;">
+                    <img src="mummy.jpg" alt="Ancient Egypt" style="width: 350px; height: auto;" />
+                </div>
+
+                <p>To further one's already broadening knowledge, the word <i>"alchemy"</i> was derived from the Greek word, <strong>"Khemia"</strong> which meant <strong>Egypt</strong>. In the 7th century, added the prefix <i>"al-”</i>i> to the word Khemia which then meant <strong><i>"The Black Land."</i></strong></p>
+
+                <p>Originally from <strong><i>Ancient Egypt</i></strong> and <strong><i>Mesopotamia,</i></strong> alchemy later spread to <strong><i>Greece,</i></strong> <strong><i>China,</i></strong> as well as the <strong><i>Islamic world.</i></strong> Its definition and usage all around the globe even during such periods in time meant that alchemy was closely tied to the development of early chemistry as alchemists experimented with various substances and techniques which laid the foundation for the progression of modern scientific methods.</p>
+
+                <p>Different from alchemy, <strong><i>iatrochemistry</i></strong> is known to be the branch of chemistry that deals with the study of pharmaceuticals and medicinal substances.</p>
+
+                <p>Before we progress through time, it's keen to be aware that alchemy has two sides. Its <strong><i>practical side</i></strong> where processes such as distillation, crystallization, and sublimation were developed. Lest we forget, it also has its <strong><i>mystical side</i></strong> which housed the ideas of perfection, immortality, and spiritual transformation.</p>
+                <hr>
+
+                <h2>Through the Oriental Grove; Ancient Chinese</h2>
+                <p>More than 4,000 years ago, the Ancient Chinese civilization was already using copper to cast matter; utilizing their malleable nature to produce ancient copper products which ranged from weapons to daily living articles.</p>
+
+                <p>There was also a strong link between <strong><i>alchemy</i></strong> and <strong><i>medicine</i></strong> in ancient China wherein much of the alchemy present within its culture was associated with <strong>Taoism</strong> and was a key factor in their quest to achieve <i>immortality.</i></p>
+                <div style="display: flex; justify-content: left; gap: 50px; margin-top: 20px;">
+                    <img src="chi.jpg" alt="Ancient Egypt" style="width: 350px; height: auto;" />
+                    <img src="chine.jpg" alt="Papyrus" style="width: 350px; height: auto;" />
+                </div>
+
+                <p>To balance the <i>yin</i> and the <i>yang</i> in one's body, <strong><i>elixirs</i></strong> were concocted to attain <strong>"perfect harmony with the universe."</strong> For this reason, it is also usually packaged with occults, spirits, and so on.</p>
+                <div style="display: flex; justify-content: left; gap: 50px; margin-top: 20px;">
+                    <img src="chinese.jpg" alt="Ancient Egypt" style="width: 350px; height: auto;" />
+                    <img src="elixirs.jpg" alt="Papyrus" style="width: 350px; height: auto;" />
+                </div>
+
+                <p>Around <i>105 CE,</i> during the Han Dynasty, <strong><i>"true paper"</i></strong> was developed by <strong>Cai Lun;</strong> a Chinese court official. The first Chinese papers were made from a combination of recycled fishing nets, bamboo, mulberry bark, silk, and hemp.</p>
+                <div style="display: flex; justify-content: left; gap: 50px; margin-top: 20px;">
+                    <img src="paper.jpg" alt="Ancient Egypt" style="width: 350px; height: auto;" />
+                    <img src="papers.jpg" alt="Papyrus" style="width: 350px; height: auto;" />
+                </div>
+
+                <p>Another advancement made by this civilization was during the reign of the <i>Tang Dynasty (618-907 AD)</i> wherein <strong><i>gunpowder</i></strong> was discovered by <i>Chinese alchemists.</i> These alchemists accidentally formed gunpowder in their search for an elixir of immortality as they were experimenting with substances like <strong>sulfur, charcoal,</strong> and <strong>saltpeter (potassium nitrate).</strong></p>
+                <div style="display: flex; justify-content: left; gap: 50px; margin-top: 20px;">
+                    <img src="gunpw.jpg" alt="Ancient Egypt" style="width: 350px; height: auto;" />
+                    <img src="gunp.jpg" alt="Papyrus" style="width: 350px; height: auto;" />
+                </div>
+                <hr>
+
+                <h2>The Illumination of Enlightenment; Ancient Greeks and Romans</h2>
+                <p>Known as the central figure in the development of <strong><i>"atomism"</i></strong> and of <strong><i>the atomic theory of the universe</i></strong> prior to <strong>John Dalton</strong>'s modern atomic theory, <strong>Democritus</strong> once stated, <i>"the universe is composed of two elements: the atoms and the void in which they exist and move."</i> Though he was not entirely incorrect, his theory would later be refined and reanalyzed by future scientists in the modern era of chemistry. Apart from his theory, Democritus was also known for his art of making alloys.</p>
+
+                <p><strong>Aristotle,</strong> meanwhile, was known for his major role in the art of philosophy as well as rhetoric. He made several contributions related to early atomic theory and to chemistry itself. However, his theory contradicted that of Democritus and due to his popularity during such a period, his theory took precedence in the collective consciousness of his fellow men.</p>
+
+                <p>According to Aristotle, matter was composed of four elements: <i>earth, fire, air, and water.</i> Of course, in modern chemistry, his theory has been debunked.</p>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                sidebar.classList.toggle('open');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>GEN CHEM PETA</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                overflow-x: hidden;
+            }
+
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: -250px;
+                width: 250px;
+                height: 100%;
+                background: #A7DCA5;
+                padding: 20px;
+                transition: left 0.3s;
+                z-index: 1000;
+            }
+
+            .sidebar.open {
+                left: 0;
+            }
+
+            .sidebar ul {
+                list-style: none;
+                margin-top: 150px;
+                text-align: left;
+                padding: 0;
+            }
+
+            .sidebar li {
+                margin: 20px;
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+                margin-bottom: 35px;
+                font-family: "Lora", serif;
+                font-size: 18px;
+            }
+
+            .sidebar img {
+                width: 35px;
+                margin-right: 10px;
+            }
+
+            .toggle-btn {
+                position: fixed;
+                top: 45px;
+                left: 10px;
+                font-size: 30px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                z-index: 1100;
+                margin-left: 10px;
+                color: #023020;
+            }
+
+            body {
+                background-color: #E4FDE1;
+            }
+
+            .header {
+                height: 170px;
+                width: 100%;
+                background-image: url('bgg.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-family: "Lora", serif;
+                font-size: 40px;
+                margin-right: 10px;
+                color: #023020;
+            }
+
+            .content {
+                padding: 0px;
+                max-width: 800px;
+                margin: 40px auto;
+                text-align: justify;
+                font-family: "Times New Roman", Times, Serif;
+                font-size: 20px;
+                line-height: 2.5;
+            }
+
+            .content h2 {
+                text-align: justify;
+                margin-bottom: 10px;
+                color: #4f6852;
+            }
+
+            .content p {
+                margin-bottom: 50px;
+                margin-top: -10px;
+            }
+
+            .content h1 {
+                text-align: center;
+                margin-right: 30px;
+                color: #336436;
+                margin-top: -15px;
+            }
+
+            .content hr {
+                margin-bottom: 40px;
+                margin-top: 80px;
+                color: black;
+            }
+
+            .content li {
+                margin-bottom: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><img src="https://img.icons8.com/ios-filled/50/home.png"/><a href="home.html" style="color: #023020;">Home</a></li>
+                <li><img src="https://img.icons8.com/ios-filled/50/time-machine.png"/><a href="history.html" style="color: #023020;">History</a></li>
+                <li><img src="https://img.icons8.com/ios-filled/50/user.png"/><a href="about_the_authors.html" style="color: #023020;">About the Authors</a></li>
+                <li><img src="https://img.icons8.com/ios-filled/50/link.png"/><a href="sources.html" style="color: #023020;">Sources</a></li>
+            </ul>
+        </div>
+
+        <!-- Toggle Button -->
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+        <!-- Page Content -->
+        <div id="mainContent">
+            <div class="header" id="header">
+                <h1>The Curian Archives</h1>
+            </div>
+
+            <div class="content" id="content">
+                <h1>Sourced Used on this Website</h1>
+
+                <ul style="list-style-type:disc;">
+                    <li>Chemistry: How it all started | The UNESCO Courier. (n.d.). Courier.unesco.org. <br> <a href="https://courier.unesco.org/en/articles/chemistry-how-it-all-started">https://courier.unesco.org/en/articles/chemistry-how-it-all-started</a></li>
+                    <li>1.2: History of Chemistry. (2016, June 16). Chemistry LibreTexts. <br> <a href="https://chem.libretexts.org/Bookshelves/">https://chem.libretexts.org/Bookshelves/</a></li>
+                    <li>Koester, V. (2023, March 7). Significant Milestones in Chemistry: A Timeline of Influential Chemists. ChemistryViews <br> <a href="https://www.chemistryviews.org/significant-milestones-in-chemistry-a-timeline-of-influential-chemists/">https://www.chemistryviews.org/significant-milestones-in-chemistry-a-timeline-of-influential-chemists/</a></li>
+                    <li>1.2. History | Organic Chemistry 1: An open textbook. (n.d.). Courses.lumenlearning.com. <br> <a href="https://courses.lumenlearning.com/suny-potsdam-organicchemistry/chapter/1-2-history/">https://courses.lumenlearning.com/suny-potsdam-organicchemistry/chapter/1-2-history/</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                sidebar.classList.toggle('open');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>GEN CHEM PETA</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                overflow-x: hidden;
+            }
+
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: -250px;
+                width: 250px;
+                height: 100%;
+                background: #A7DCA5;
+                padding: 20px;
+                transition: left 0.3s;
+                z-index: 1000;
+            }
+
+            .sidebar.open {
+                left: 0;
+            }
+
+            .sidebar ul {
+                list-style: none;
+                margin-top: 150px;
+                text-align: left;
+                padding: 0;
+            }
+
+            .sidebar li {
+                margin: 20px;
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+                margin-bottom: 35px;
+                font-family: "Lora", serif;
+                font-size: 18px;
+            }
+
+            .sidebar img {
+                width: 35px;
+                margin-right: 10px;
+            }
+
+            .toggle-btn {
+                position: fixed;
+                top: 45px;
+                left: 10px;
+                font-size: 30px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                z-index: 1100;
+                margin-left: 10px;
+                color: #023020;
+            }
+
+            body {
+                background-color: #E4FDE1;
+            }
+
+            .header {
+                height: 170px;
+                width: 100%;
+                background-image: url('bgg.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-family: "Lora", serif;
+                font-size: 40px;
+                margin-right: 10px;
+                color: #023020;
+            }
+
+            .content {
+                padding: 0px;
+                max-width: 800px;
+                margin: 40px auto;
+                text-align: justify;
+                font-family: "Times New Roman", Times, Serif;
+                font-size: 20px;
+                line-height: 2.5;
+            }
+
+            .content h2 {
+                text-align: justify;
+                margin-bottom: 10px;
+                color: #4f6852;
+            }
+
+            .content p {
+                margin-bottom: 50px;
+                margin-top: -10px;
+            }
+
+            .content h1 {
+                text-align: center;
+                margin-right: 30px;
+                color: #336436;
+                line-height: 1.5;
+                margin-bottom: 40px;
+                margin-top: 5px;
+            }
+
+            .content hr {
+                margin-bottom: 40px;
+                margin-top: 80px;
+                color: black;
+            }
+
+            .content img {
+                display: block;
+                margin: 10px auto 30px auto;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #4f6852;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><img src="https://img.icons8.com/ios-filled/50/home.png"/><a href="home.html" style="color: #023020;">Home</a></li>
+                <li><img src="https://img.icons8.com/ios-filled/50/time-machine.png"/><a href="history.html" style="color: #023020;">History</a></li>
+                <li><img src="https://img.icons8.com/ios-filled/50/user.png"/><a href="about_the_authors.html" style="color: #023020;">About the Authors</a></li>
+                <li><img src="https://img.icons8.com/ios-filled/50/link.png"/><a href="sources.html" style="color: #023020;">Sources</a></li>
+            </ul>
+        </div>
+
+        <!-- Toggle Button -->
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+        <!-- Page Content -->
+        <div id="mainContent">
+            <div class="header" id="header">
+                <h1>The Curian Archives</h1>
+            </div>
+
+            <div class="content" id="content">
+                <h1>About the Authors: The People Behind the Creation of this Website</h1>
+
+                <p>Though created and handled by <strong>Grade 11 STEM</strong> students from <strong>The Our Lady of Fatima University,</strong> The Curian Archives are as credible, as functional, and as user-friendly as other websites catered toward students in the field of chemistry. All of the information found within this site has been carefully organized, verified, and sourced from various credible platforms and references; from hardbound textbooks to softcopy websites found on the Internet, The Curian Archives can be described as being the tranquil sanctuary for any student looking for their one-stop shop for knowledge when it comes to chemistry. What you’ll find here are not merely nuggets of information for your next quiz or exam, but you’ll also find a safe and comforting place that encourages you to be critical of the world around you at your own chosen pace.</p>
+
+                <p>The Curian Archives was not created sloppily and hastily for the sake of creation. It was a labor of love; a product of perseverance, time and effort by an ambitious group of students hoping to create a safe haven for fellow peers.</p>
+
+                <p>Created with various source codes and careful curation, <strong><i>Deniella Rose D. Batonghinog</i></strong> is credited with the painstaking labor required for any functional website to sprout and prosper. Without her fine hand and abundant knowledge when it comes to formulating lines of codes and critical analysis, this project would have been much more difficult to navigate through.</p>
+
+                <p>More adept with literature and the art of expressing through words, this website was carved with poetry by <strong><i>Yohanna Amore Y. Ablola,</i></strong> who aimed to deliver both beauty and practicality to a website that ought to be looked at with grace and appreciation. The words you see on screen throughout this website were carefully woven together, lovingly combined, and gently orchestrated to reach every reader who has stumbled and will stumble upon this site.</p>
+
+                <p>In a world full of cutting realism, even in chemistry, it never hurts to be a dreamer; because being a dreamer allowed for such knowledge to be discovered to begin with.</p>
+
+                <p>Of course, any website would be lost without their thorough archivists and diligent keepers, and for that, we have <strong><i>Jake Nathaniel A. Baluyut, Claire R. Manuel,</i></strong> and <strong><i>Mariell Alessandra M. Alejo</i></strong> to credit. Without their combined efforts in information verification, research and organization, as well as their unrivaled cooperation, this project would not be in its current shape and form. Finding honest students with values aimed at spreading  genuine knowledge  is no easy feat; and It is through their keen eyes that the resources and information you see before you have all been certified to be accurate and true. </p>
+
+                <p>This website was created for the purpose of learning, for the purpose of growing, and for the purpose of blossoming individual minds to become their most introspective selves thus far, and it will remain that way for as long as learning remains. There is beauty to be found in learning, no matter how grueling, there is beauty to be found in every corner of it.</p>
+                <hr>
+
+                <div style="display: flex; justify-content: center; gap: 60px; margin-top: 20px;">
+                    <div style="text-align: center;">
+                        <img src="batonghinog.jpg" alt="batonghinog" style="width: 240px; height: 230px; object-fit: cover;">
+                        <p>Batonghinog, Deniella Rose</p>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <img src="baluyut.jpg" alt="baluyut" style="width: 240px; height: 230px; object-fit: cover;">
+                        <p>Baluyut, Jake Nathaniel</p>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <img src="ablola.jpg" alt="ablola" style="width: 240px; height: 230px; object-fit: cover;">
+                        <p>Ablola, Yohanna Amore</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: center; gap: 60px; margin-top: 20px;">
+                    <div style="text-align: center;">
+                        <img src="manuel.jpg" alt="manuel" style="width: 240px; height: 230px; object-fit: cover;">
+                        <p>Manuel, Claire</p>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <img src="alejo.jpg" alt="alejo" style="width: 240px; height: 230px; object-fit: cover;">
+                        <p>Alejo, Mariell Alessandra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                sidebar.classList.toggle('open');
+            }
+        </script>
+    </body>
+</html>
